@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_stroke"
+    android:layout_marginHorizontal="11dp"
+    android:layout_marginVertical="3dp"
+    android:layout_height="81dp">
+
+    <ImageView
+        android:id="@+id/speaker_img"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="9dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:src="@drawable/speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/english_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="1dp"
+        android:text="aback"
+        android:textSize="17.7sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/uzbek_word"
+        app:layout_constraintLeft_toRightOf="@id/speaker_img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/uzbek_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="ajablanmoq"
+        android:textSize="16.7sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/speaker_img"
+        app:layout_constraintTop_toBottomOf="@id/english_word" />
+
+    <ImageView
+        android:id="@+id/favourite_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="1dp"
+        android:layout_marginRight="13dp"
+        android:src="@drawable/un_marked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="?android:selectableItemBackgroundBorderless"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
